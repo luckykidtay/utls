@@ -9,9 +9,7 @@ import (
 	"sync"
 
 	"github.com/bogdanfinn/utls/dicttls"
-	"github.com/cloudflare/circl/hpke"
-	"github.com/refraction-networking/utls/dicttls"
-	"github.com/refraction-networking/utls/internal/hpke"
+	"github.com/bogdanfinn/utls/internal/hpke"
 	"golang.org/x/crypto/cryptobyte"
 )
 
