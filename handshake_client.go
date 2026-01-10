@@ -27,6 +27,8 @@ import (
 	"github.com/bogdanfinn/utls/internal/fips140tls"
 	"github.com/bogdanfinn/utls/internal/hpke"
 	"github.com/bogdanfinn/utls/internal/tls13"
+
+	circlSign "github.com/cloudflare/circl/sign"
 )
 
 type clientHandshakeState struct {
