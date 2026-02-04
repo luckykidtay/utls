@@ -3275,7 +3275,7 @@ func (uconn *UConn) applyPresetByID(id ClientHelloID) (err error) {
 				}
 			}
 
-			if uconn.WithDisableHttp3 {
+			if !uconn.WithEnableHttp3 {
 				for _, ext := range spec.Extensions {
 					switch ext.(type) {
 					case *ALPNExtension:
