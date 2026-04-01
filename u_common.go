@@ -635,7 +635,7 @@ var (
 	HelloFirefox_105  = ClientHelloID{helloFirefox, false, "105", nil, nil, EmptyClientHelloSpecFactory}
 	HelloFirefox_120  = ClientHelloID{helloFirefox, false, "120", nil, nil, EmptyClientHelloSpecFactory}
 
-	HelloChrome_Auto        = HelloChrome_133
+	HelloChrome_Auto        = HelloChrome_143
 	HelloChrome_58          = ClientHelloID{helloChrome, false, "58", nil, nil, EmptyClientHelloSpecFactory}
 	HelloChrome_62          = ClientHelloID{helloChrome, false, "62", nil, nil, EmptyClientHelloSpecFactory}
 	HelloChrome_70          = ClientHelloID{helloChrome, false, "70", nil, nil, EmptyClientHelloSpecFactory}
@@ -678,6 +678,11 @@ var (
 	HelloChrome_131 = ClientHelloID{helloChrome, false, "131", nil, nil, EmptyClientHelloSpecFactory}
 	// Chrome w/ New ALPS codepoint
 	HelloChrome_133 = ClientHelloID{helloChrome, false, "133", nil, nil, EmptyClientHelloSpecFactory}
+	// Chrome 143-146: same TLS spec as 133 (ML-KEM + ECH + new ALPS + extension shuffling)
+	HelloChrome_143 = ClientHelloID{helloChrome, false, "143", nil, nil, EmptyClientHelloSpecFactory}
+	HelloChrome_144 = ClientHelloID{helloChrome, false, "144", nil, nil, EmptyClientHelloSpecFactory}
+	HelloChrome_145 = ClientHelloID{helloChrome, false, "145", nil, nil, EmptyClientHelloSpecFactory}
+	HelloChrome_146 = ClientHelloID{helloChrome, false, "146", nil, nil, EmptyClientHelloSpecFactory}
 	HelloChrome_109 = ClientHelloID{helloChrome, false, "109", nil, nil, EmptyClientHelloSpecFactory}
 	HelloChrome_110 = ClientHelloID{helloChrome, false, "110", nil, nil, EmptyClientHelloSpecFactory}
 	HelloChrome_111 = ClientHelloID{helloChrome, false, "111", nil, nil, EmptyClientHelloSpecFactory}

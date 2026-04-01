@@ -1035,7 +1035,13 @@ func utlsIdToSpec(id ClientHelloID) (ClientHelloSpec, error) {
 				&UtlsGREASEExtension{},
 			}),
 		}, nil
-	case HelloChrome_133.Str():
+	case HelloChrome_133.Str(),
+		HelloChrome_143.Str(),
+		HelloChrome_144.Str(),
+		HelloChrome_145.Str(),
+		HelloChrome_146.Str():
+		// Chrome 143-146 use the same TLS spec as 133:
+		// ML-KEM (X25519MLKEM768), ECH, new ALPS codepoint, extension shuffling
 		return ClientHelloSpec{
 			CipherSuites: []uint16{
 				GREASE_PLACEHOLDER,
